@@ -11,7 +11,7 @@ The XML output conforms to the [schema-for-json.xsd](https://www.w3.org/TR/xpath
 In short : 
 
 A JSON object `{ ... }` is converted to an XML `<map> ... </map>` element.  
-A JSON array `{ ... }` is converted to an XML `<array> ... </array>` element.
+A JSON array `[ ... ]` is converted to an XML `<array> ... </array>` element.
 
 and for scalar types : 
 
