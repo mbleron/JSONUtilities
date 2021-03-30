@@ -6,11 +6,11 @@
 
 It converts a JSON text content, provided in the form of a CLOB, into an XML representation (XMLTYPE) according to [this mapping](https://www.w3.org/TR/xpath-functions-31/#json-to-xml-mapping).
 
-The XML output comforms to the [schema-for-json.xsd](https://www.w3.org/TR/xpath-functions-31/schema-for-json.xsd) schema.
+The XML output conforms to the [schema-for-json.xsd](https://www.w3.org/TR/xpath-functions-31/schema-for-json.xsd) schema.
 
 In short : 
 
-A JSON object `{ ... }` is converted to an XML `<map> ... </map>` element.
+A JSON object `{ ... }` is converted to an XML `<map> ... </map>` element.  
 A JSON array `{ ... }` is converted to an XML `<array> ... </array>` element.
 
 and for scalar types : 
@@ -20,7 +20,7 @@ JSON number `123.45` ➜ `<number>Hello!</number>`
 JSON boolean `true` / `false` ➜ `<boolean>true</boolean>` / `<boolean>false</boolean>`  
 JSON null `null` ➜ `<null/>`
 
-When the JSON element is an object member, a "key" attribute is added to the XML element to represents its name, e.g.
+When the JSON element is an object member, a "key" attribute is added to the XML element to represent its name, e.g.
 
 `{"item":"Hello!"}` ➜ `<map><string key="item">Hello!</string></map>`
 
