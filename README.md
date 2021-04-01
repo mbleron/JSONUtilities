@@ -16,7 +16,7 @@ A JSON array `[ ... ]` is converted to an XML `<array> ... </array>` element.
 and for scalar types : 
 
 JSON string `"Hello!"` ➜ `<string>Hello!</string>`  
-JSON number `123.45` ➜ `<number>Hello!</number>`  
+JSON number `123.45` ➜ `<number>123.45</number>`  
 JSON boolean `true` / `false` ➜ `<boolean>true</boolean>` / `<boolean>false</boolean>`  
 JSON null `null` ➜ `<null/>`
 
